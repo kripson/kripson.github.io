@@ -1,0 +1,87 @@
+
+
+.border{
+	padding: 5px;
+		background: linear-gradient(110deg, black 33%, rgba(0, 0, 0, 0) 33%), linear-gradient(110deg, #C5E7D7 34%,  #15d3b3
+ 34%);
+	background-size: 400% 400%;
+	height: 400px;
+	background-position: 25% 50%;
+	-webkit-animation: Gradient 5s ease infinite;
+	-moz-animation: Gradient 5s ease infinite;
+
+}
+.inner-cutout{
+	padding: 40px 0;
+	display: block;
+	background-color:#ff6f69;
+		
+	margin: 2%;
+	padding-bottom: 40px;
+	height: 300px;
+	background-color:white;
+	 background-size: 300%;
+	background-position:50% 50%;
+	
+
+}
+.knockout {
+	
+	vertical-align: middle;
+	text-align: center;
+	font-family:'Baloo Bhai', cursive;
+	font-size:3em;
+	color: blue;
+	color: #fff;
+	background: linear-gradient(110deg, black 33%, rgba(0, 0, 0, 0) 33%), linear-gradient(110deg, #C5E7D7 34%,  #15d3b3
+ 34%);
+	background-size: 400%;
+	 -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+.knockout{
+		animation: Gradient 5s ease infinite;
+		-webkit-animation: Gradient 5s ease infinite;
+		-moz-animation: Gradient 5s ease infinite;
+}
+
+@keyframes Gradient {
+	0% {
+		background-position: 30% 50%;
+	}
+	50% {
+		background-position: 25% 50%;
+	}
+	100% {
+		background-position: 30% 50%;
+	}
+	
+}
+
+@keyframes show {
+	0% {
+		transform:translateX(100px);
+		opacity:0;
+	}
+	
+	100% {
+		transform:translateX(0);
+		opacity:1;
+	}
+	
+}
+
+
+
+.main{
+	z-index:1;
+	position:absolute;
+	width: 500px;
+	animation-name: show;
+	animation-duration: 0.75s;
+	right:15%;
+	top:40%;
+	
+}
+
+

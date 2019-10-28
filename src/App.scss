@@ -1,0 +1,115 @@
+
+  
+
+    #first img
+    {
+    
+    animation-name:preloader1;
+    animation-duration:5s;
+    animation-iteration-count:infinite;
+    animation-timing-function:ease;
+    }
+
+   
+
+
+
+@keyframes preloader1
+{
+  0%{transform:translateX(0);}
+  25%{transform:translateX(300px) scale(1.25);}
+  50%{transform:translateX(0) scale(1);}
+  75%{transform:translateX(-300px) scale(1.25);}
+  100%{transform:translateX(0) scale(1);}
+}
+
+
+
+.App {
+  text-align: center;
+  height:inherit;
+
+  
+
+  .app-inner-wrapper
+  {
+    
+    height:inherit;
+  }
+  
+  
+  }
+
+
+
+
+
+
+
+body,html
+{
+  margin: 0;
+  height: 100%;
+
+
+
+}
+
+
+#test
+{
+  background-color:black;
+  width:400px;
+  height:500px;
+}
+
+
+.IntroBackground
+{
+  
+  z-index:-1;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  
+
+
+
+  img
+  {
+    position: absolute;
+    bottom: -2.15em;
+    z-index:1;
+    right:0;
+    animation-name:illustration;
+    animation-duration:0.75s;
+    height: 400px;
+    width: 500px;
+    transition: all 0.5s;
+
+
+
+  }
+
+
+  img:hover
+  {
+    transform:scale(1.2);
+  }
+
+  
+
+  
+  
+}
+
+
+
+
+@keyframes illustration
+{
+  0%{ transform: translateY(100px);opacity:0;}
+  100%{transform: translateY(0);opacity:1}
+}
+
+

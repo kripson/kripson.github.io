@@ -1,0 +1,138 @@
+.showcase
+{
+.showinnerBox
+{
+	
+
+	
+	align-content:center;
+
+	#projects,#activities
+	{
+		display:grid;
+		grid-template-columns:1fr 1fr;
+		height:100vh;
+
+	
+	}
+}
+}
+
+
+#projects
+{
+	animation-name:anime2;
+	animation-duration: 2s;
+	animation-fill-mode:forwards;
+	margin:2em;
+	display:grid;
+	align-items:center;
+	justify-items:center;
+
+	h1
+	{
+	text-align:left;
+
+	 background-image: url('icons/pro.gif'); /* Change URL to texture file name */
+  	 background-repeat: repeat;
+ 	 background-position: left;
+  	 -webkit-background-clip: text;
+  	 -webkit-text-fill-color: transparent;
+  	 font-size:6em;
+  	 margin:0;
+
+
+	}
+	a:hover
+	{
+		color: #1569bd;
+	}
+	p
+	{
+		font-family: 'Work Sans', sans-serif;
+		color:grey;
+		margin:0;
+		font-size:1.5em;
+		line-height:140%;
+		text-transform:uppercase;
+		text-align:left;
+	}
+	
+
+	img
+	{
+		width:50vw;
+		height:90vh;
+		z-index:-1;
+		
+	}
+
+
+
+
+}
+
+#activities
+{
+	animation-name:anime1;
+	animation-duration: 2s;
+	animation-fill-mode:forwards;
+	margin:2em;
+	display:grid;
+	align-items:center;
+	justify-items:center;
+
+	h1
+	{
+	text-align:left;
+
+	 background-image: url('https://i.pinimg.com/564x/0a/86/31/0a8631d8ea397750a708c9734f8bfc97.jpg'); /* Change URL to texture file name */
+  	 background-repeat: repeat;
+ 	 background-position: right;
+  	 -webkit-background-clip: text;
+  	 -webkit-text-fill-color: transparent;
+  	 font-size:6em;
+  	 margin:0;
+
+
+	}
+	a:hover
+	{
+		color: #1569bd;
+	}
+	p
+	{
+		font-family: 'Work Sans', sans-serif;
+		color:grey;
+		margin:0;
+		font-size:1.5em;
+		line-height:140%;
+		text-transform:uppercase;
+		text-align:left;
+	}
+	
+
+	img
+	{
+		position:absolute;
+		width:150px;
+		height:160px;
+		z-index:-1;
+		
+	}
+
+	
+}
+
+
+@keyframes anime1
+{
+	0%{opacity:0;transform:translateX(-100px)}
+	100%{opacity:1;transform:translateX(0)}
+}
+
+@keyframes anime2
+{
+	0%{opacity:0;transform:translateX(100px)}
+	100%{opacity:1;transform:translateX(0)}
+}

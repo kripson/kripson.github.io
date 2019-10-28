@@ -1,0 +1,25 @@
+.left
+{
+	position:absolute;
+	height:100%;
+	width:100%;
+	display:grid;
+	grid-template-columns: 48.5% 48.5% 3%;
+	align-items:center;
+
+
+
+}
+
+
+.right
+{
+	position:absolute;
+	height:100%;
+	width:100%;
+	display:grid;
+	grid-template-columns: 3% 48.5% 48.5%;
+	align-items:center;
+
+
+}
