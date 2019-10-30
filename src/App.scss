@@ -16,11 +16,11 @@
 
 @keyframes preloader1
 {
-  0%{transform:translateX(0);}
-  25%{transform:translateX(300px) scale(1.25);}
-  50%{transform:translateX(0) scale(1);}
-  75%{transform:translateX(-300px) scale(1.25);}
-  100%{transform:translateX(0) scale(1);}
+  0%{}
+  25%{transform: scale(1.25);}
+  50%{transform:scale(1);}
+  75%{transform:scale(1.25);}
+  100%{transform:scale(1);}
 }
 
 
@@ -58,7 +58,7 @@ body,html
 
 #test
 {
-  background-color:black;
+  
   width:400px;
   height:500px;
 }
@@ -71,6 +71,8 @@ body,html
   position: absolute;
   height: 100%;
   width: 100%;
+  background-image: linear-gradient(to left, #43C6AC , #191654);
+
   
 
 
@@ -111,5 +113,16 @@ body,html
   0%{ transform: translateY(100px);opacity:0;}
   100%{transform: translateY(0);opacity:1}
 }
+
+
+#sticky-footer {
+  background-image: linear-gradient(to left, #43C6AC , #191654);
+  flex-shrink: none;
+  height:150px;
+  color:white;
+
+
+}
+
 
 

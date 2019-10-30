@@ -1,6 +1,6 @@
 .AboutMe
 {
-	height:100vh;
+	min-height:100vh;
 	.innerBox
 {
 	display:grid;
@@ -20,7 +20,7 @@ div
 	
 	width:400px;
 	animation-name:air;
-	animation-duration:8s;
+	animation-duration:2s;
 	
 }
 
@@ -57,13 +57,13 @@ img:hover
 #nepal
 {
 	animation-name:nepal;
-	animation-duration:6s;
+	animation-duration:2s;
 }
 
 #australia
 {
 	animation-name:australia;
-	animation-duration:6s;
+	animation-duration:2s;
 }
 
 #australiasection
@@ -92,14 +92,16 @@ img:hover
 
 @keyframes nepal
 {
-	0%{opacity:0; transform:translateX(-500px)}
-	100%{opacity:1;transform:translateX(0)}
+	0%{opacity:0; transform:scale(0)}
+	50%{opacity:1;transform:scale(1.2)}
+	100%{opacity:1;transform:scale(1)}
 }
 
 @keyframes australia
 {
-	0%{opacity:0; transform:translateX(500px)}
-	100%{opacity:1;transform:translateX(0)}
+	0%{opacity:0; transform:scale(0)}
+	50%{opacity:1;transform:scale(1.2)}
+	100%{opacity:1;transform:scale(1)}
 }
 
 @keyframes air

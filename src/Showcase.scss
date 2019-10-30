@@ -19,15 +19,13 @@
 }
 
 
+
 #projects
 {
-	animation-name:anime2;
-	animation-duration: 2s;
-	animation-fill-mode:forwards;
-	margin:2em;
 	display:grid;
 	align-items:center;
 	justify-items:center;
+
 
 	h1
 	{
@@ -50,7 +48,6 @@
 	p
 	{
 		font-family: 'Work Sans', sans-serif;
-		color:grey;
 		margin:0;
 		font-size:1.5em;
 		line-height:140%;
@@ -74,9 +71,7 @@
 
 #activities
 {
-	animation-name:anime1;
-	animation-duration: 2s;
-	animation-fill-mode:forwards;
+	
 	margin:2em;
 	display:grid;
 	align-items:center;
@@ -103,7 +98,6 @@
 	p
 	{
 		font-family: 'Work Sans', sans-serif;
-		color:grey;
 		margin:0;
 		font-size:1.5em;
 		line-height:140%;
@@ -114,9 +108,7 @@
 
 	img
 	{
-		position:absolute;
-		width:150px;
-		height:160px;
+		height:60vh;
 		z-index:-1;
 		
 	}
@@ -135,4 +127,19 @@
 {
 	0%{opacity:0;transform:translateX(100px)}
 	100%{opacity:1;transform:translateX(0)}
+}
+
+
+#projectimg
+{
+	animation-name:anime2;
+	animation-duration: 2s;
+	animation-fill-mode:forwards;
+}
+
+#activitiesimg
+{
+	animation-name:anime1;
+	animation-duration: 2s;
+	animation-fill-mode:forwards;
 }

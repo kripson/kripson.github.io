@@ -1,11 +1,9 @@
 import React from 'react';
 import './Showcase.scss';
+import LazyLoad from 'react-lazyload';
 import projects from "./icons/projects.png";
 import activities from "./icons/sactivities.png";
-import medu1 from "./icons/m_edu1.jpg";
-import medu2 from "./icons/m_edu2.jpg";
-import medu3 from "./icons/m_edu3.jpg";
-import medu4 from "./icons/m_edu4.jpg";
+
 
 class Showcase  extends React.Component{
 
@@ -61,13 +59,18 @@ class Showcase  extends React.Component{
       <div id = "projects">
       <div><h1>{this.state.projecttext}</h1><p>To see what I have been up to <br></br><a href = "">Click here</a></p></div>
       
-      <div><img  src = {projects} ></img></div>
+      <div>
+      <LazyLoad>
+      <img id = "projectimg" src = {projects} ></img>
+      </LazyLoad>
+      </div>
       </div>
       <div id = "activities">
       <div>
-      <img style = {{transform:'translateX(-100px)'}} src = {medu1} ></img>
-      <img style = {{transform:'translateX(100px)'}} src = {medu2} ></img>
-      <img style = {{transform:'translateY(-100px)'}} src = {medu3} ></img>
+      <LazyLoad>
+      <img id = "activitiesimg" src = {activities} ></img>
+      </LazyLoad>
+      
       </div>
       <div><h1>{this.state.activitiestext}</h1><p>To see what I have been up to <br></br><a href = "">Click here</a></p></div>
       

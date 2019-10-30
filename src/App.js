@@ -31,7 +31,7 @@ function App() {
     <link href="https://fonts.googleapis.com/css?family=Fascinate+Inline|Work+Sans&display=swap" rel="stylesheet"></link>
     
   
-    <Preloader fadeDuration = {0}>
+    <Preloader fadeDuration = {3000}>
                 <Placeholder id = "placeholder">
                     <div id = "first"><img src = {preloader}></img></div>
                    
@@ -50,13 +50,19 @@ function App() {
       <Nav></Nav>
       <Banner></Banner>
       <Intro></Intro>
-      <Contacts></Contacts>
+      <Contacts position = {"top"}></Contacts>
       <AboutMe></AboutMe>
       <Showcase></Showcase>
 
 
-
-      <a href='https://pngtree.com/so/internet'>internet png from pngtree.com</a>
+      <footer id="sticky-footer" class="py-4 bg-dark text-white-50">
+        <div class="container text-center">
+          <Contacts position = {"bottom"}></Contacts>
+          <a style = {{position:"absolute" , bottom:0 , right:0 }} href='https://pngtree.com/so/internet'>internet png from pngtree.com</a>
+          <small>Copyright &copy; Sankit Man Shrestha</small>
+        </div>
+      </footer>
+      
 
 
 
