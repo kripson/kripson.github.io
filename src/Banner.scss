@@ -1,33 +1,33 @@
 
 
 .border{
-	padding: 5px;
+		
 		background: linear-gradient(110deg, #43C6AC 33%, rgba(0, 0, 0, 0) 33%), linear-gradient(110deg, #789bde 34%,  #3059a4
  34%);
 	background-size: 400% 400%;
-	height: 400px;
+	height: 25.5vw;
+	width:27.5vw;
 	background-position: 25% 50%;
 	-webkit-animation: Gradient 5s ease infinite;
 	-moz-animation: Gradient 5s ease infinite;
+	position:relative;
 
 }
 .inner-cutout{
-	padding: 40px 0;
-	display: block;
+	position:absolute;
 	background-color:#ff6f69;
-		
-	margin: 2%;
-	padding-bottom: 40px;
-	height: 300px;
+	height: 92.5%;
+	width:92.5%;
+	left:3.75%;
+	top:3.75%;
 	background-color:white;
-	 background-size: 300%;
+	background-size: 300%;
 	background-position:50% 50%;
-	
+	display:grid;
 
 }
 .knockout {
-	
-	vertical-align: middle;
+	align-self: center;
 	text-align: center;
 	font-family:'Baloo Bhai', cursive;
 	font-size:3em;
@@ -76,7 +76,8 @@
 .main{
 	z-index:1;
 	position:absolute;
-	width: 500px;
+	width: 30vw;
+	max-width:600px;
 	animation-name: show;
 	animation-duration: 0.75s;
 	right:15%;
