@@ -9,6 +9,7 @@ import AboutMe from "./AboutMe";
 import Showcase from "./showcase";
 import illustration from "./icons/illustration.svg";
 import preloader from "./icons/9-1.gif";
+import LazyLoad from 'react-lazyload';
 import { Preloader, Placeholder } from 'react-preloading-screen';
 
  
@@ -48,7 +49,9 @@ function App() {
      
 
       <Nav></Nav>
+      <LazyLoad>
       <Banner></Banner>
+      </LazyLoad>
       <Intro></Intro>
       <Contacts position = {"top"}></Contacts>
       <AboutMe></AboutMe>
